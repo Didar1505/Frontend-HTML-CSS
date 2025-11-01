@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+.card {
+    width: 300px;
+    border: 2px solid rgb(178, 178, 178);
+}
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+.card-body > h2 {
+    margin-bottom: 12px;
+}
+.card-body > a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(53, 120, 53);
+    display: block;
+    padding: 10px 0;
+}
