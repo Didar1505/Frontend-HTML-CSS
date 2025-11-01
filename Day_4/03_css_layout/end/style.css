@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #000;
+    display: block;
+    width: 100%;
+}
+
+/* Container for sidebar and main content */
+.container {
+    width: 100%;
+    overflow: hidden; /* Clearfix for floated elements */
+}
+
+/* Sidebar */
+.sidebar {
+    float: left;
+    width: 20%;
+    height: 400px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px 0;
+    display: block;
+}
+
+/* Main Content */
+.main-content {
+    float: right;
+    width: 78%;
+    height: 400px;
+    background-color: #d0d0d0;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px 0;
+    display: block;
+    position: relative;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #000;
+    display: block;
+    width: 100%;
+    clear: both; /* Clear floated elements above */
+}
