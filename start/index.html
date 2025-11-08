@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КиноТур</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -34,31 +38,35 @@
             <h2>Trending Now</h2>
             <div class="line"></div>
 
-            <div class="movies">
+            <div class="movies owl-carousel owl-theme">
 
-                <div class="movie-card">
-                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200" alt="Movie Poster" class="movie-poster">
+                <div class="movie-card item">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200"
+                        alt="Movie Poster" class="movie-poster">
                     <div class="movie-info">
                         <div class="movie-title">Interstellar Odyssey</div>
                         <div class="movie-meta">2025 <span class="rating">★ 9.2</span></div>
                     </div>
                 </div>
-                <div class="movie-card">
-                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200" alt="Movie Poster" class="movie-poster">
+                <div class="movie-card item">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200"
+                        alt="Movie Poster" class="movie-poster">
                     <div class="movie-info">
                         <div class="movie-title">Interstellar Odyssey</div>
                         <div class="movie-meta">2025 <span class="rating">★ 9.2</span></div>
                     </div>
                 </div>
-                <div class="movie-card">
-                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200" alt="Movie Poster" class="movie-poster">
+                <div class="movie-card item">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200"
+                        alt="Movie Poster" class="movie-poster">
                     <div class="movie-info">
                         <div class="movie-title">Interstellar Odyssey</div>
                         <div class="movie-meta">2025 <span class="rating">★ 9.2</span></div>
                     </div>
                 </div>
-                <div class="movie-card">
-                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200" alt="Movie Poster" class="movie-poster">
+                <div class="movie-card item">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_68c6db5ad2c40e013b017a42_68c6e89fd11b503df079d8a7/scale_1200"
+                        alt="Movie Poster" class="movie-poster">
                     <div class="movie-info">
                         <div class="movie-title">Interstellar Odyssey</div>
                         <div class="movie-meta">2025 <span class="rating">★ 9.2</span></div>
@@ -69,6 +77,22 @@
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(function () {
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 3,
+                autoplay:true,
+                margin: 10,
+                autoplayTimeout:2000,
+                loop: true,
+                nav: true
+            });
+        });
+    </script>
 </body>
 
 </html>
